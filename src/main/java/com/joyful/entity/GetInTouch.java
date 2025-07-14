@@ -24,6 +24,11 @@ public class GetInTouch {
 
 	@Column(name = "lastname", columnDefinition = "TEXT")
 	private String lastname;
+	
+	@Column(name = "email", columnDefinition = "TEXT")
+	private String email;
+	@Column(name = "phone", columnDefinition = "TEXT")
+	private String phone;
 
 	@Column(name = "querytype", columnDefinition = "TEXT")
 	private String querytype;
