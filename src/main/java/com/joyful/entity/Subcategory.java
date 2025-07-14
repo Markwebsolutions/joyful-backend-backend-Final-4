@@ -25,12 +25,12 @@ public class Subcategory {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(name = "name")
+	@Column(name = "name", columnDefinition = "TEXT")
 	private String name;
-	@Column(name = "imagepath")
+	@Column(name = "imagepath", columnDefinition = "TEXT")
 	private String imagepath;
 
-	@Column(name = "metatitle")
+	@Column(name = "metatitle", columnDefinition = "TEXT")
 	private String metatitle;
 
 	@Column(name = "ispublished")
