@@ -17,13 +17,13 @@ public class ProductEnquiry {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "fullName")
+	@Column(name = "fullName", columnDefinition = "TEXT")
 	private String fullName;
-	@Column(name = "email")
+	@Column(name = "email", columnDefinition = "TEXT")
 	private String email;
-	@Column(name = "phone")
+	@Column(name = "phone", columnDefinition = "TEXT")
 	private String phone;
-	@Column(name = "product")
+	@Column(name = "product", columnDefinition = "TEXT")
 	private String product;
 	@Column(name = "message", columnDefinition = "TEXT")
 	private String message;
