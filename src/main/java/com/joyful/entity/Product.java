@@ -32,7 +32,7 @@ public class Product {
 	@Column(name = "id")
 	private Long id;
 
-	@Column(name = "name")
+	@Column(name = "name", columnDefinition = "TEXT")
 	private String name;
 
 	@Column(name = "description", columnDefinition = "TEXT")
