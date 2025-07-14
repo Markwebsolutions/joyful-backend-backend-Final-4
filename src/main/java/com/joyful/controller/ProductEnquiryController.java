@@ -19,16 +19,7 @@ import com.joyful.entity.ProductEnquiry;
 import com.joyful.repository.ProductEnquiryRepository;
 
 @RestController
-@CrossOrigin(
-    origins = {
-        "http://localhost:5173",
-        "http://localhost:5174",
-        "http://localhost:3000",
-        "https://markweb-joyful.netlify.app",
-        "http://localhost:5175",
-    },
-    allowCredentials = "true"
-)
+@CrossOrigin("*")
 public class ProductEnquiryController {
 
     @Autowired
