@@ -25,22 +25,22 @@ public class Category {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "name")
+	@Column(name = "name", columnDefinition = "TEXT")
 	private String name;
 
 	@Column(name = "description", columnDefinition = "TEXT")
 	private String description;
 
-	@Column(name = "searchkeywords")
+	@Column(name = "searchkeywords", columnDefinition = "TEXT")
 	private String searchkeywords;
 
-	@Column(name = "imagelink")
+	@Column(name = "imagelink", columnDefinition = "TEXT")
 	private String imagelink;
 
-	@Column(name = "seotitle")
+	@Column(name = "seotitle", columnDefinition = "TEXT")
 	private String seotitle;
 
-	@Column(name = "seokeywords")
+	@Column(name = "seokeywords", columnDefinition = "TEXT")
 	private String seokeywords;
 
 	@Column(name = "seodescription", columnDefinition = "TEXT")
