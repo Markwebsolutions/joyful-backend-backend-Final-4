@@ -79,5 +79,4 @@ public class Product {
 	@Basic(fetch = FetchType.EAGER) // ✅ This is the key fix
 	@Column(name = "variantsmap", columnDefinition = "TEXT")
 	private String variantsMap;
-
 }
