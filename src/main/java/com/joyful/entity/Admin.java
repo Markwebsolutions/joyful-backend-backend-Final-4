@@ -15,6 +15,5 @@ public class Admin {
 	@Override
 	public String toString() {
 		return "Admin [LoginID=" + loginID + ", password=" + password + "]";
-		
 	}
 }
