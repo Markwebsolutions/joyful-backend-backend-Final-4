@@ -38,26 +38,26 @@ public class Product {
 	@Column(name = "description", columnDefinition = "TEXT")
 	private String description;
 
-	@Column(name = "mainimage")
+	@Column(name = "mainimage", columnDefinition = "TEXT")
 	private String mainimage;
 	
-	@Column(name = "hoverimage")
+	@Column(name = "hoverimage", columnDefinition = "TEXT")
 	private String hoverimage;
 	@ElementCollection
-	@Column(name = "producttags")
+	@Column(name = "producttags", columnDefinition = "TEXT")
 	private List<String> producttags;
 
-	@Column(name = "filter")
+	@Column(name = "filter", columnDefinition = "TEXT")
 	private String filter;
 
 	// SEO Fields
-	@Column(name = "metatitle")
+	@Column(name = "metatitle", columnDefinition = "TEXT")
 	private String metatitle;
 
 	@Column(name = "metadescription", columnDefinition = "TEXT")
 	private String metadescription;
 
-	@Column(name = "pagekeywords")
+	@Column(name = "pagekeywords", columnDefinition = "TEXT")
 	private String pagekeywords;
 
 	@Column(name = "ispublished", nullable = false)
