@@ -70,4 +70,8 @@ public class Subcategory {
 		this.categoryIds = categoryIds;
 	}
 
+	public Set<Product> getProducts() {
+		return this.products;
+	}
+
 }

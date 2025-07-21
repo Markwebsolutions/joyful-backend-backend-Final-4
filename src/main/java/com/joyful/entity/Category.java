@@ -62,8 +62,6 @@ public class Category {
 		this.isPublished = ispublished;
 	}
 
-
-	
 	@Transient
 	@JsonIgnore // ✅ This hides the top-level products list in JSON
 	private Set<Product> products = new HashSet<>();
@@ -79,4 +77,25 @@ public class Category {
 		}
 		return allProducts;
 	}
+
+	public String getSeotitle() {
+		return this.seotitle;
+	}
+
+	public String getImagelink() {
+		return this.imagelink;
+	}
+
+	public String getSeokeywords() {
+		return this.seokeywords;
+	}
+
+	public String getSeodescription() {
+		return this.seodescription;
+	}
+
+	public List<Subcategory> getSubcategories() {
+		return this.subcategories;
+	}
+
 }
