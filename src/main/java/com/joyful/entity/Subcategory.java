@@ -50,15 +50,11 @@ public class Subcategory {
 	@JsonIgnoreProperties("subcategories")
 	private List<Category> categories;
 
-//	@ManyToMany(mappedBy = "subcategories")
-//	@JsonIgnore // ✅ temporarily skip products in JSON to fix 500 error
-//	private Set<Product> products = new HashSet<>();
-
 	@ManyToMany(mappedBy = "subcategories")
 	@JsonIgnoreProperties("subcategories") // ✅ Prevents recursive loop
 	private Set<Product> products = new HashSet<>();
 
-//	newly added today
+
 	@Transient
 	private List<Long> categoryIds;
 
@@ -74,4 +70,7 @@ public class Subcategory {
 		return this.products;
 	}
 
+	public void setProducts(Set<Product> products) {
+		this.products = products;
+	}
 }

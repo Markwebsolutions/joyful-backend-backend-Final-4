@@ -79,4 +79,24 @@ public class Product {
 	@Basic(fetch = FetchType.EAGER) // ✅ This is the key fix
 	@Column(name = "variantsmap", columnDefinition = "TEXT")
 	private String variantsMap;
+	
+	public Set<Subcategory> getSubcategories() {
+	    return subcategories;
+	}
+	public void setSubcategories(Set<Subcategory> subcategories) {
+	    this.subcategories = subcategories;
+	}
+	public String getVariantsMap() {
+	    return variantsMap;
+	}
+	public void setVariantsMap(String variantsMap) {
+	    this.variantsMap = variantsMap;
+	}
+	public Boolean getNewarrival() {
+	    return newarrival;
+	}
+	public void setNewarrival(Boolean newarrival) {
+	    this.newarrival = newarrival;
+	}
+
 }

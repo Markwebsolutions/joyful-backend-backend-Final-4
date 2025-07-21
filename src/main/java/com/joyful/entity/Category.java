@@ -98,4 +98,7 @@ public class Category {
 		return this.subcategories;
 	}
 
+	public void setSubcategories(List<Subcategory> subcategories) {
+		this.subcategories = subcategories;
+	}
 }
