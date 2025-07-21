@@ -18,4 +18,8 @@ public interface SubcategoryRepository extends JpaRepository<Subcategory, Long> 
 	boolean existsByCategoryId(@Param("categoryId") Long categoryId);
 
 	Optional<Subcategory> findByNameAndCategoriesContaining(String name, Category category);
+
+	@Query("SELECT s FROM Subcategory s JOIN s.categories c WHERE s.name = :name AND c = :category")
+	Optional<Subcategory> findByNameAndCategory(@Param("name") String name, @Param("category") Category category);
+
 }

@@ -62,9 +62,7 @@ public class Category {
 		this.isPublished = ispublished;
 	}
 
-//	@Transient
-//	@JsonIgnoreProperties("subcategories") // optional if you want to avoid recursive loop
-//	private Set<Product> products = new HashSet<>();
+
 	
 	@Transient
 	@JsonIgnore // ✅ This hides the top-level products list in JSON
